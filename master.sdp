@@ -1,0 +1,93 @@
+v=0
+o=- 0 1 IN IP4 Red_Source
+s=Signal_Name
+i=Signal_Name_2110_20_Source
+t=0 0
+a=group:DUP primary secondary
+m=video Port RTP/AVP 96
+c=IN IP4 Red_Video_Sender/255
+a=source-filter: incl IN IP4 Red_Video_Sender Red_Source
+a=rtpmap:96 raw/90000
+a=fmtp:96 sampling=YCbCr-4:2:2; depth=10; width=1280; height=720; exactframerate=60000/1001; colorimetry=UNSPECIFIED; TCS=SDR; range=NARROW; TP=2110TPN; PM=2110GPM; SSN=ST2110-20:2017; PAR=1:1; 
+a=mediaclk:direct=0
+a=ts-refclk:localmac=00-0B-72-08-2A-66
+a=mid:primary
+m=video Port RTP/AVP 96
+c=IN IP4 Blue_Video_Sender/255
+a=source-filter: incl IN IP4 Blue_Video_Sender Blue_Source
+a=rtpmap:96 raw/90000
+a=fmtp:96 sampling=YCbCr-4:2:2; depth=10; width=1280; height=720; exactframerate=60000/1001; colorimetry=UNSPECIFIED; TCS=SDR; range=NARROW; TP=2110TPN; PM=2110GPM; SSN=ST2110-20:2017; PAR=1:1; 
+a=mediaclk:direct=0
+a=ts-refclk:localmac=00-0B-72-08-2A-6B
+a=mid:secondary
+
+v=0
+o=- 0 1 IN IP4 Red_Source
+s=Signal_Name
+i=Signal_Name_2110_30_Source
+t=0 0
+a=group:DUP primary secondary
+m=audio Port RTP/AVP 97
+c=IN IP4 Red_Audio_1_Sender/255
+a=source-filter: incl IN IP4 Red_Audio_1_Sender Red_Source
+a=rtpmap:97 L24/48000/8
+a=ts-refclk:localmac=00-0B-72-08-34-0C
+a=mediaclk:direct=0
+a=framecount:6
+a=ptime:0.125
+a=mid:primary
+m=audio Port RTP/AVP 97
+c=IN IP4 Blue_Audio_1_Sender/255
+a=source-filter: incl IN IP4 Blue_Audio_1_Sender Blue_Source
+a=rtpmap:97 L24/48000/8
+a=ts-refclk:localmac=00-0B-72-08-34-11
+a=mediaclk:direct=0
+a=framecount:6
+a=ptime:0.125
+a=mid:secondary
+
+v=0
+o=- 0 1 IN IP4 Red_Source
+s=Signal_Name
+i=Signal_Name_2110_30_Source
+t=0 0
+a=group:DUP primary secondary
+m=audio Port RTP/AVP 97
+c=IN IP4 Red_Audio_2_Sender/255
+a=source-filter: incl IN IP4 Red_Audio_2_Sender Red_Source
+a=rtpmap:97 L24/48000/8
+a=ts-refclk:localmac=00-0B-72-08-34-0C
+a=mediaclk:direct=0
+a=framecount:6
+a=ptime:0.125
+a=mid:primary
+m=audio Port RTP/AVP 97
+c=IN IP4 Blue_Audio_2_Sender/255
+a=source-filter: incl IN IP4 Blue_Audio_2_Sender Blue_Source
+a=rtpmap:97 L24/48000/8
+a=ts-refclk:localmac=00-0B-72-08-34-11
+a=mediaclk:direct=0
+a=framecount:6
+a=ptime:0.125
+a=mid:secondary
+
+v=0
+o=- 0 1 IN IP4 Red_Source
+s=Signal_Name
+i=Signal_Name_2110_40_Source
+t=0 0
+a=group:DUP primary secondary
+m=video Port RTP/AVP 98
+c=IN IP4 Red_Ancilliary_Data_Sender/255
+a=source-filter: incl IN IP4 Red_Ancilliary_Data_Sender Red_Source
+a=rtpmap:98 smpte291/90000
+a=mediaclk:direct=0
+a=ts-refclk:localmac=00-0B-72-08-2A-66
+a=mid:primary
+m=video Port RTP/AVP 98
+c=IN IP4 Blue_Ancilliary_Data_Sender/255
+a=source-filter: incl IN IP4 Blue_Ancilliary_Data_Sender Blue_Source
+a=rtpmap:98 smpte291/90000
+a=mediaclk:direct=0
+a=ts-refclk:localmac=00-0B-72-08-2A-6B
+a=mid:secondary
