@@ -75,3 +75,4 @@ typings/
 # Extra junk
 notes.txt
 SDP_Files/*
+*.csv
