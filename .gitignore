@@ -73,6 +73,6 @@ typings/
 .serverless
 
 # Extra junk
+signals.csv
 notes.txt
 SDP_Files/*
-*.csv
