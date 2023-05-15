@@ -75,4 +75,5 @@ typings/
 # Extra junk
 signals.csv
 notes.txt
-SDP_Files/*
+
+/SDP_Files/*

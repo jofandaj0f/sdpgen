@@ -1,0 +1,1 @@
+Delete .demo. from the signals csv file name and use it to build names and multicast IP addresses. 
